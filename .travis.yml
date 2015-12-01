@@ -11,6 +11,6 @@ perl:
 - '5.14'
 
 before_script:
-- command -v mysql
+- command -v mysql || true
 - echo $PATH
-- mysql --version
+- mysql --version || true
