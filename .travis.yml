@@ -14,3 +14,4 @@ before_script:
 - command -v mysql || true
 - echo $PATH
 - mysql --version || true
+- find / -name mysql 2>/dev/null || true
