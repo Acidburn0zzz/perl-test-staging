@@ -10,4 +10,7 @@ perl:
 - '5.16'
 - '5.14'
 
-after_script: dpkg --get-selections | grep -v deinstall | awk '{ print $1 }'
+before_script:
+- command -v mysql
+- echo $PATH
+- mysql --version
